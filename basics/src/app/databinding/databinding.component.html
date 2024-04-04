@@ -1,0 +1,28 @@
+<h1>databinding Assingment!</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol>
+        <li>
+          add a input field which updates a property ('username') via
+          Two-way-binding
+        </li>
+        <li>Output the username property via string Interpolation</li>
+        <li>Add abutton which is only clickable if username is not empty</li>
+        <li>upon clicking the btn the username should be reset to empty</li>
+      </ol>
+      <hr />
+      <h2>Solution</h2>
+      <label for="">Username</label>
+      <input type="text" class="form-control" [(ngModel)]="username" />
+      <p>{{ username }}</p>
+      <button
+        class="btn btn-primary"
+        [disabled]="username === ''"
+        (click)="username = ''"
+      >
+        Reset user
+      </button>
+    </div>
+  </div>
+</div>
