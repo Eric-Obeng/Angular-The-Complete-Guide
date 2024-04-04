@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  background-color: aqua;
+  padding: 1.5rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+ul li {
+  list-style-type: none;
+  color: brown;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+ul li:hover {
+  color: aliceblue;
+}
